@@ -1,1 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    height: 60vh;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 5vh;
+    
+}
+
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.menus{
+    display: flex;
+    justify-content: center;
+} 
+
+.logo{
+    margin-top: 80px;
+}
+.logo img{
+    width: 100%;
+    height: 24vh;
+    
+}
+
+.menus nav ul{
+    display: flex;
+    padding-top: 25px;
+    margin-bottom: 3%;
+}
+
+.menus nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+    
+}
+
+
+.menus nav ul li a{
+    font-size: 3vh;
+    text-decoration: none;
+    color:#fff;
+    transition: opacity 300ms;
+}
+
+.menus nav ul li a:hover{
+    opacity: 0.8;
+}
+
+
+
+/*PORTADA - COVER*/
+
+main{
+    width: 80%;
+    max-width: 1200px;
+    height: 50vh;
+    
+    
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 5vh;  
+}
+
+.title {
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 3%;  
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-size: 4vh;
+    color: #545454;
+    float: none;
+    margin-top: 3%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title p{
+    width: 50%;
+    font-size: 2vh;
+    font-style: italic;
+    color: #545454;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+
+}
+
+/*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    height: 350px;
+    padding: 10px 0px;
+    background-color: black;
+    margin-top: auto;
+    
+
+}
+
+.container__footer{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 16px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 1024px){
+
+
+    
+    .container__header,
+    main{
+        padding: 20px;
+    }
+
+    .menu{
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+        transition: all 300ms;
+    }
+
+    .menu nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .menu nav ul li{
+        padding: 10px 40px;
+    }
+
+    
+}
+
+@media screen and (max-width:920px){
+   
+    
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .cover{
+        text-align: center;
+    }
+    .container__footer{
+        width: 100%;
+        grid-template-columns: repeat (1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 0px;
+        background-color: black;
+    }
+    .box__copyright{
+
+        width: 100%;
+        grid-template-columns: repeat (1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 0px;
+        padding-bottom: 10px;
+        background-color: black;
+    }
+
+}
+
 
