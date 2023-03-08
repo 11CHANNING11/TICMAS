@@ -1,5 +1,7 @@
 # TICMAS
-Final project about CV online.
+Final project about CV online. 
+
+Link: https://11channing11.github.io/TICMAS/
 
 This project comprehends different aspects like:
 
